@@ -178,7 +178,7 @@
 $altura= $_GET['altura'];
 $peso= $_GET['peso'];
 
-echo "IMC:".($peso/($altura*$altura))."<br>";$altura= $_GET['altura'];
+echo "<div style=color:white""IMC:".($peso/($altura*$altura))."<br>";$altura= $_GET['altura'];"</div>"
 $peso= $_GET['peso'];
 
 
