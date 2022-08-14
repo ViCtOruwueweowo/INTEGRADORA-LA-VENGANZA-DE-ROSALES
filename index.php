@@ -130,10 +130,10 @@
   <p style="font-size: 18px; font-family: Arial, Helvetica, sans-serif;color: white;text-align:justify">Favor de llenar todos los campos con la informacion correcta para calcular de IMC de forma concreta</p>
            
               <form  method="get">
-      <input type="text" name="num1" style="width: 250px;" placeholder="Ingrese su Altura..">
+      <input type="text" name="altura" style="width: 250px;" placeholder="Ingrese su Altura..">
       <br>
       <br>
-      <input type="text" name="num2" style="width: 250px;" placeholder="Ingrese su Peso..">
+      <input type="text" name="peso" style="width: 250px;" placeholder="Ingrese su Peso..">
        <br> 
        <br>
       <input type="submit" value="Calcular" style="background-color:rgb(95, 95, 174) ;border: transparent;color: white;width: 150px; height: 35px;margin: 5px;">
@@ -175,11 +175,13 @@
                </tr>
               </table>
               <?php
-$altura = $_Get['num1'];
-$peso = $_Get['num2'];
-$multiplica = $peso/($altura*$altura);
+$altura= $_GET['altura'];
+$peso= $_GET['peso'];
 
-echo $multiplica;
+echo "IMC:".($peso/($altura*$altura))."<br>";$altura= $_GET['altura'];
+$peso= $_GET['peso'];
+
+
               ?>
           </div>
       </div>
