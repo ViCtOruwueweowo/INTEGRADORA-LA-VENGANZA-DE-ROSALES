@@ -171,13 +171,13 @@
                        </tr>
                <tr>
                   <td style="color:white">Obecidad Clase lll</td>
-                  <td style="color:white">>40.0 hola</td>
+                  <td style="color:white">>40.0</td>
                </tr>
               </table>
               <?php
 $altura = $_Get['num1'];
 $peso = $_Get['num2'];
-$multiplica = $altura * $peso;
+$multiplica = $peso/($altura*$altura);
 
 echo $multiplica;
               ?>
