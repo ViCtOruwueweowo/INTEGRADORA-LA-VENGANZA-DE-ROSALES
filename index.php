@@ -34,7 +34,7 @@
     <div class="container-fluid">
         <div class="container-fluid">
             <a class="navbar-brand" href="../integradora/index.php">
-              <img src="../integradora/img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+              <img src="../integradora/img/logo.png" alt="" width="49" height="50" class="d-inline-block align-text-top">
             </a>
           </div>      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -171,7 +171,7 @@
                        </tr>
                <tr>
                   <td style="color:white">Obecidad Clase lll</td>
-                  <td style="color:white">>40.0</td>
+                  <td style="color:white">>40.0 hola</td>
                </tr>
               </table>
               <?php
