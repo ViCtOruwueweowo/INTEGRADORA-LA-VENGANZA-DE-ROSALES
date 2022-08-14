@@ -175,8 +175,8 @@
                </tr>
               </table>
               <?php
-$altura = $_POST['num1'];
-$peso = $_POST['num2'];
+$altura = $_Get['num1'];
+$peso = $_Get['num2'];
 $multiplica = $altura * $peso;
 
 echo $multiplica;
