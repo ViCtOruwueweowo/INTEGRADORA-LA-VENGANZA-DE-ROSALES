@@ -5,40 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head> 
+</head>
 <body>
 <div style="width: 50%; margin:auto;">
         <h3>Registro</h3>
         <hr>
         <form action="GUARDUSUARIO.php" method="post">
             <fieldset>
-                <legend>Alta Usuario EMPRESA</legend> 
+                <legend>Alta Clientes</legend>
                 <br>
-                <label for="Fecha">NOMBRES:</label>
-                <input type="text" name="nombre"  required placeholder=" "> <br><br>
-
-                <label for="Fecha">APELLIDOS:</label>
-                <input type="text" name="apellido"  required placeholder=" "> <br><br>
-                
-                <label for="Fecha">DIRECCIÓN:</label>
-                <input type="text" name="direccion"  required placeholder=" "> <br><br>
-                
-                <label for="Nombre">TELÉFONO:</label>
-                <input type="text" name="telefono"  required placeholder=" "> <br><br>
-                
-                <label for="Fecha">CORREO:</label>
-                <input type="text" name="user"  required placeholder=" "> <br><br>
-                
-                <label for="Fecha">FECHA DE NACIMIENTO:</label>
-                <input type="date" name="fnac"  required placeholder=" "> <br><br>
-                
-                <label for="Fecha">CÓDIGO POSTAL:</label>
-                <input type="text" name="cp"  required placeholder=" "> <br><br>
-                
-                <label for="Fecha">CONTRASEÑA:</label>
-                <input type="password" name="password"  required placeholder=" "> <br><br>
-
+                <label for="Nombre">Nombres:</label>
+                <input type="text" name="nombres"  required placeholder="Escribe tu nombre"> <br><br>
+                <label for="Nombre">Apellidos:</label>
+                <input type="text" name="apellidos"  required placeholder="Escribe tus apellidos"> <br><br>
+                <label for="Nombre">Direccion:</label>
+                <input type="text" name="dire"  required placeholder="Escribe tu direccion"> <br><br>
+                <label for="Nombre">Telefono:</label>
+                <input type="text" name="tele"  required placeholder="Escribe tu direccion"> <br><br>
+                <label for="Nombre">Correo:</label>
+                <input type="email" name="correo"  required placeholder="Escribe tu correo"> <br><br>
+                <label for="Nombre">Fecha de Nacimiento:</label>
+                <input type="date" name="FC"  required placeholder="Escribe tu fecha de nacimiento"> <br><br>
+                <label for="Fecha">Cp:</label>
+                <input type="text" name="CP"  required placeholder="Escribe tu codigo postal"> <br><br>
+                <label for="Fecha">tu password:</label>
+                <input type="password" name="pass"  required placeholder="Escribe tu password"> <br><br>
                 <input class="boton" type="submit" value="Guardar" name="Guardar">
-        </form>
-</body>
-</html> 
+            </form>
+      </body>
+    </html>
