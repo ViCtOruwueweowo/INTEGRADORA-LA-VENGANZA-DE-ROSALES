@@ -87,7 +87,7 @@
 
       <div class="d-block d-sm-block d-md-none text-center">
         <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d899.8908517405307!2d-103.41382807082353!3d25.552916008911094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fdbaef9be0fd5%3A0xe1536ca8568bf766!2sCerro%20de%20la%20Estrella%20398%2C%20Tierra%20y%20Libertad%2C%2027040%20Torre%C3%B3n%2C%20Coah.!5e0!3m2!1ses!2smx!4v1625439430254!5m2!1ses!2smx" width="390" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
+      </div> 
     </div>
   </div>
 </body>
