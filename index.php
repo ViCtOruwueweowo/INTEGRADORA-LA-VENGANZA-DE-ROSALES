@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../integradora/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../integradora/css/cartas.css">
-    <link rel="stylesheet" href="../integradora/css/tablas.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cartas.css">
+    <link rel="stylesheet" href="css/tablas.css">
     <script src="../integradora/js/bootstrap.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -33,8 +33,8 @@
 <nav class="navbar navbar-expand" style="background-color:#571071ad">
     <div class="container-fluid">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../integradora/index.php">
-              <img src="../integradora/img/logo.png" alt="" width="49" height="50" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="index.php">
+              <img src="img/logo.png" alt="" width="49" height="50" class="d-inline-block align-text-top">
             </a>
           </div>      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,25 +42,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../integradora/views/vistaempresa/empleados.php" style="color:white">Empleados</a>
+            <a class="nav-link active" aria-current="page" href="views/vistaempresa/empleados.php" style="color:white">Empleados</a>
           </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../integradora/views/vistaempresa/proveedores.php" style="color:white">Proveedores</a>
+            <a class="nav-link active" aria-current="page" href="views/vistaempresa/proveedores.php" style="color:white">Proveedores</a>
           </li> 
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../integradora/views/Categorias/ofertas.php" style="color:white">Ofertas</a>
+            <a class="nav-link active" aria-current="page" href="views/Categorias/ofertas.php" style="color:white">Ofertas</a>
           </li>
           </li> 
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../integradora/views/productos/todos.php" style="color:white">Productos</a>
+            <a class="nav-link active" aria-current="page" href="views/productos/todos.php" style="color:white">Productos</a>
           </li>
         </li> 
        
             </ul>
       </div>
       <div class="container-end" >
-        <a class="navbar-brand" href="../integradora/views/Logins/login_app.php" >
-          <img src="../Gym Box/img/icono.png" alt="iniciarsesion" width="50" height="25" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="views/Logins/login_app.php" >
+          <img src="img/icono.png" alt="iniciarsesion" width="50" height="25" class="d-inline-block align-text-top">
         </a>
       </div>
     </div>
@@ -83,7 +83,7 @@
 
 <!-- Foto 1 -->
 <div class="item active">
-  <img src="../integradora/img/img.jpg">
+  <img src="img/img.jpg">
 </div>
 
 <!-- Foto 2 -->
@@ -200,20 +200,20 @@ echo $multiplica;
 <h3 style="color: orange;">!!DISFRUTA DE GRANDES OFERTAS¡¡</h3>
 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum est aut distinctio rem dicta minima iste voluptas quia, sapiente consequuntur odio dolorum excepturi illum cumque.</P>
 <div class="link">
-    <a href="../integradora/views/Categorias/ofertas.php">Ir a Ofertas</a>
+    <a href="views/Categorias/ofertas.php">Ir a Ofertas</a>
 </div>
     </div>
   </div></td>
   <td ><div class="card">
     <div class="face front">
-<img src="../integradora/img/inscripcion.jpg" alt="">
+<img src="img/inscripcion.jpg" alt="">
 <h3>INSCRIPCION</h3>
     </div>
     <div class="face back">
 <h3 style="color: orange;">!!INSCRIBETE AHORA¡¡</h3>
 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum est aut distinctio rem dicta minima iste voluptas quia, sapiente consequuntur odio dolorum excepturi illum cumque.</P>
 <div class="link">
-    <a href="../integradora/views/Logins/login_gym.php">Ir a Inscripcion</a>
+    <a href="views/Logins/login_gym.php">Ir a Inscripcion</a>
 </div>
     </div>
     
@@ -227,7 +227,7 @@ echo $multiplica;
 <h3 style="color: orange;">!!SOMOS GYM CLUB¡¡</h3>
 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum est aut distinctio rem dicta minima iste voluptas quia, sapiente consequuntur odio dolorum excepturi illum cumque.</P>
 <div class="link">
-    <a href="../integradora/views/nosotros.php">Ir a conocenos</a>
+    <a href="views/nosotros.php">Ir a conocenos</a>
 </div>
     </div>
     
