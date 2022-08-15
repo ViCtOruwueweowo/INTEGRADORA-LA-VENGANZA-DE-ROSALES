@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/cartas.css">
     <link rel="stylesheet" href="css/tablas.css">
-    <script src="js/bootstrap.js"></script>
+    <script src="../integradora/js/bootstrap.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -52,7 +52,7 @@
           </li>
           </li> 
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="views/productos/todos.php" style="color:white">Productos</a>
+            <a class="nav-link active" aria-current="page" href="views\carro\carrito\index.php" style="color:white">Productos</a>
           </li>
         </li> 
        
@@ -178,7 +178,7 @@
 $altura= $_GET['altura'];
 $peso= $_GET['peso'];
 
-echo "<div style=color:white""IMC:".($peso/($altura*$altura))."<br>";$altura= $_GET['altura'];"</div>"
+echo "IMC:".($peso/($altura*$altura))."<br>";$altura= $_GET['altura'];
 $peso= $_GET['peso'];
 
 

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once("../../src/query/clase.php");
+require_once("clase.php");
 
 $usar_db = new DBControl();
 
@@ -15,7 +15,7 @@ switch($_GET["accion"])
 			$codproducto = $usar_db->vaiQuery("SELECT * FROM productos WHERE cod='" . $_GET["cod"] . "'");
 			$items_array = array($codproducto[0]["cod"]=>array(
 			'vai_nom'		=>$codproducto[0]["NOMBRE"], 
-
+			'vai_cod'		=>$codproducto[0]["cod"], 
 			'txtcantidad'	=>$_POST["txtcantidad"], 
 			'vai_pre'		=>$codproducto[0]["PRECIO_UNITARIO"], 
 			'vai_img'		=>$codproducto[0]["img"]
@@ -78,11 +78,11 @@ switch($_GET["accion"])
 <html>
 <meta charset="UTF-8">
 <head>
-<title>CARRITO</title>
+<title>VaidrollTeam</title>
 <link href="estilo.css" rel="stylesheet" />
 </head>
 <body>
-<div align="center"><h1>RunRun</h1></div>
+<div align="center"><h1>VaidrollTeam - Carrito de compras</h1></div>
 <div>
 <div><h2>Lista de productos a comprar.</h2></div>
 
@@ -97,7 +97,7 @@ if(isset($_SESSION["items_carrito"]))
 <table>
 <tr>
 <th style="width:30%">Descripción</th>
-
+<th style="width:10%">Código</th>
 <th style="width:10%">Cantidad</th>
 <th style="width:10%">Precio x unidad</th>
 <th style="width:10%">Precio</th>
@@ -139,3 +139,33 @@ if(isset($_SESSION["items_carrito"]))
 ?>
 </div>
 
+<div>
+<div><h2>Productos</h2></div>
+<div class="contenedor_general">
+	<?php
+	$productos_array = $usar_db->vaiquery("SELECT * FROM productos ORDER BY CATEGORIA ASC");
+	if (!empty($productos_array)) 
+	{ 
+		foreach($productos_array as $i=>$k)
+		{
+	?>
+		<div class="contenedor_productos">
+			<form method="POST" action="index.php?accion=agregar&cod=
+			<?php echo $productos_array[$i]["cod"]; ?>">
+			<div><img src="<?php echo $productos_array[$i]["img"]; ?>"></div>
+			<div>
+			<div style="padding-top:20px;font-size:18px;"><?php echo $productos_array[$i]["NOMBRE"]; ?></div>
+			<div style="padding-top:10px;font-size:20px;"><?php echo "$".$productos_array[$i]["PRECIO_UNITARIO"]; ?></div>
+			<div><input type="text" name="txtcantidad" value="1" size="2" /><input type="submit" value="Agregar" />
+			</div>
+			</div>
+			</form>
+		</div>
+	<?php
+		}
+	}
+	?>
+</div>
+
+</body>
+</html>
